@@ -15,7 +15,7 @@ pip install django
 
 ## How does caching work ??
     ** Local Memory Cache **
->    Unless we explicitly specify another caching method in our settings file, Django defaults to local memory caching. As its name implies, this method stores cached data in RAM on the machine where Django is running. Local memory caching is fast, responsive, and thread-safe. 
+    Unless we explicitly specify another caching method in our settings file, Django defaults to local memory caching. As its name implies, this method stores cached data in RAM on the machine where Django is running. Local memory caching is fast, responsive, and thread-safe. 
 
     To set up local memory caching, the CACHES section of our Django settings file should look like this (swap out the cache location for yours):
 
@@ -30,7 +30,7 @@ pip install django
         }
 
     ** Filesystem Cache **
->    A filesystem cache uses significantly less memory than in-memory caching. However, it comes at the cost of being considerably slower than an in-memory cache. Aside from those two factors, its trade-offs are similar to those of local memory caching.
+    A filesystem cache uses significantly less memory than in-memory caching. However, it comes at the cost of being considerably slower than an in-memory cache. Aside from those two factors, its trade-offs are similar to those of local memory caching.
 
     The CACHES section of your Django settings file should look something like this:
 
@@ -45,7 +45,7 @@ pip install django
         }
 
     ** Memcached **
->    Memcached is an efficient cache implementation. It’s the fastest caching method that Django works with out of the box. You may be surprised to hear that many high-traffic sites rely on Memcached to reduce database queries, including Facebook and Wikipedia.
+    Memcached is an efficient cache implementation. It’s the fastest caching method that Django works with out of the box. You may be surprised to hear that many high-traffic sites rely on Memcached to reduce database queries, including Facebook and Wikipedia.
         One such configuration (running on localhost) looks like this:
 
         CACHES = {
@@ -61,7 +61,7 @@ pip install django
         }
 
     ** Database Caching **
->    Django is also capable of leveraging our existing database for caching. Setup is straightforward: we just need to provide the name of the database table to store cache data. A database-backed cache doesn’t perform as well as in-memory caching.
+    Django is also capable of leveraging our existing database for caching. Setup is straightforward: we just need to provide the name of the database table to store cache data. A database-backed cache doesn’t perform as well as in-memory caching.
 
     To use database caching, we place the following code in the CACHES section of the settings file:
 
@@ -78,7 +78,7 @@ pip install django
         }
 
     ** Custom Cache Implementation **
->    If we don’t like any of Django’s default caching options, we can add our own. We just need to create a class that extends BaseCache. As a starting point, we can look at Django’s dummy cache implementation. Our custom cache provider class should implement the same methods as the dummy cache class, replacing the code in each method with code that interacts with our preferred cache storage backend. 
+    If we don’t like any of Django’s default caching options, we can add our own. We just need to create a class that extends BaseCache. As a starting point, we can look at Django’s dummy cache implementation. Our custom cache provider class should implement the same methods as the dummy cache class, replacing the code in each method with code that interacts with our preferred cache storage backend. 
 
     We can configure a custom cache implementation by providing only the path of our provider class.
 

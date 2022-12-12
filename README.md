@@ -95,7 +95,8 @@ pip install django
         }
 
 ### Google Doc Viewr Mode : 
-    Base url: [https://docs.google.com/document/d/19OJlPNzKIgjb1_CR3LEcnqeH8fomxG7j8or1L2H8P2s/edit?usp=sharing](doc:https://docs.google.com/document/d/19OJlPNzKIgjb1_CR3LEcnqeH8fomxG7j8or1L2H8P2s/edit?usp=sharing#anchor-links)
+    Base url: <a href="doc:https://docs.google.com/document/d/19OJlPNzKIgjb1_CR3LEcnqeH8fomxG7j8or1L2H8P2s/edit?usp=sharing" target="_blank">[Google Doc]</a>
+    [Google Doc](doc:https://docs.google.com/document/d/19OJlPNzKIgjb1_CR3LEcnqeH8fomxG7j8or1L2H8P2s/edit?usp=sharing)
 
     Full URL of the document: [Google Doc](doc:https://docs.google.com/document/d/19OJlPNzKIgjb1_CR3LEcnqeH8fomxG7j8or1L2H8P2s/edit?usp=sharing.pdf#anchor-links)
 

@@ -14,7 +14,7 @@ pip install django
     To use cache in Django, first thing to do is to set up where the cache will stay. The cache framework offers different possibilities - cache can be saved in database, on file system or directly in memory.
 
 ## How does caching work ??
-    ```<b> Local Memory Cache</b> ```
+    <b> Local Memory Cache</b>
     Unless we explicitly specify another caching method in our settings file, Django defaults to local memory caching. As its name implies, this method stores cached data in RAM on the machine where Django is running. Local memory caching is fast, responsive, and thread-safe. 
 
     To set up local memory caching, the CACHES section of our Django settings file should look like this (swap out the cache location for yours):
